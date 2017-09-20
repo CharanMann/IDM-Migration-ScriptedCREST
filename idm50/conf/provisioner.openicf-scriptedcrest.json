@@ -79,20 +79,6 @@
             "type" : "object",
             "nativeType" : "user",
             "properties" : {
-                "displayName" : {
-                    "type" : "string",
-                    "nativeName" : "displayName",
-                    "nativeType" : "string"
-                },
-                "name" : {
-                    "type" : "object",
-                    "items" : {
-                        "type" : "object",
-                        "nativeType" : "object"
-                    },
-                    "nativeName" : "name",
-                    "nativeType" : "object"
-                },
                 "_id" : {
                     "type" : "string",
                     "required" : true,
@@ -102,23 +88,85 @@
                         "NOT_UPDATEABLE"
                     ]
                 },
+                "displayName" : {
+                    "type" : "string",
+                    "nativeName" : "displayName",
+                    "nativeType" : "string"
+                },
+                "department" : {
+                    "type" : "string",
+                    "nativeName" : "department",
+                    "nativeType" : "string"
+                },
+                "employeeNumber" : {
+                    "type" : "string",
+                    "nativeName" : "employeeNumber",
+                    "nativeType" : "string"
+                },
+                "userType" : {
+                    "type" : "string",
+                    "nativeName" : "userType",
+                    "nativeType" : "string"
+                },
+                "givenName" : {
+                    "type" : "string",
+                    "nativeName" : "givenName",
+                    "nativeType" : "string"
+                },
+                "city" : {
+                    "type" : "string",
+                    "nativeName" : "city",
+                    "nativeType" : "string"
+                },
+                "mail" : {
+                    "type" : "string",
+                    "nativeName" : "mail",
+                    "nativeType" : "string"
+                },
+                "telephoneNumber" : {
+                    "type" : "string",
+                    "nativeName" : "telephoneNumber",
+                    "nativeType" : "string"
+                },
+                "postalCode" : {
+                    "type" : "string",
+                    "nativeName" : "postalCode",
+                    "nativeType" : "string"
+                },
+                "sn" : {
+                    "type" : "string",
+                    "nativeName" : "sn",
+                    "nativeType" : "string"
+                },
+                "stateProvince" : {
+                    "type" : "string",
+                    "nativeName" : "stateProvince",
+                    "nativeType" : "string"
+                },
+                "address1" : {
+                    "type" : "string",
+                    "nativeName" : "address1",
+                    "nativeType" : "string"
+                },
+                "title" : {
+                    "type" : "string",
+                    "nativeName" : "title",
+                    "nativeType" : "string"
+                },
                 "userName" : {
                     "type" : "string",
                     "nativeName" : "userName",
-                    "nativeType" : "string",
-                    "flags" : [
-                        "NOT_CREATABLE",
-                        "NOT_UPDATEABLE"
-                    ]
+                    "nativeType" : "string"
                 },
-                "groups" : {
-                    "type" : "array",
-                    "items" : {
-                        "type" : "object",
-                        "nativeType" : "object"
-                    },
-                    "nativeName" : "groups",
-                    "nativeType" : "object"
+                "accountStatus" : {
+                    "type" : "string",
+                    "nativeName" : "accountStatus",
+                    "nativeType" : "string"
+                },
+                "lastPasswordSet" : {
+                    "type" : "string",
+                    "nativeName" : "lastPasswordSet",
+                    "nativeType" : "string"
                 },
                 "password" : {
                     "type" : "string",
@@ -128,15 +176,6 @@
                         "NOT_READABLE",
                         "NOT_RETURNED_BY_DEFAULT"
                     ]
-                },
-                "contactInformation" : {
-                    "type" : "object",
-                    "items" : {
-                        "type" : "object",
-                        "nativeType" : "object"
-                    },
-                    "nativeName" : "contactInformation",
-                    "nativeType" : "object"
                 }
             }
         }
