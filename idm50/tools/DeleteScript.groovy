@@ -28,7 +28,7 @@ def uid = uid as Uid
 def objectClassInfo = configuration.propertyBag[objectClass.objectClassValue];
 if (objectClassInfo != null) {
     DeleteRequest request = Requests.newDeleteRequest(objectClassInfo.resourceContainer, uid.uidValue)
-    request.setResourcePath("/api/" + request.getResourcePath())
+
     request.setRevision(uid.revision)
     connection.delete(new RootContext(), request)
 } else {

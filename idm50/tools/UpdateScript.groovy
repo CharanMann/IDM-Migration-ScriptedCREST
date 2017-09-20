@@ -45,7 +45,7 @@ switch (operation) {
 
             if (true) {
                 ReadRequest request = Requests.newReadRequest(objectClassInfo.resourceContainer, uid.uidValue)
-                request.setResourcePath("/api/" + request.getResourcePath())
+
                 request.addField("/")
                 try {
                     ResourceResponse resource = connection.read(new RootContext(), request)

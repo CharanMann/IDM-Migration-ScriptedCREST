@@ -67,8 +67,6 @@ def objectClassInfo = configuration.propertyBag[objectClass.objectClassValue];
 if (objectClassInfo != null) {
 
     QueryRequest request = Requests.newQueryRequest(objectClassInfo.resourceContainer)
-    request.setResourcePath("/api/" + request.getResourcePath())
-
     if (null != filter) {
         request.queryFilter = filter.accept(CRESTFilterVisitor.VISITOR, [
                 translateName: { String name ->

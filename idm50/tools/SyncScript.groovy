@@ -44,7 +44,7 @@ switch (operation) {
         Map<String, Object> objectClassInfo = configuration.propertyBag[objectClass.objectClassValue];
         if (objectClassInfo != null) {
 
-            QueryRequest request = Requests.newQueryRequest('/api/changelog')
+            QueryRequest request = Requests.newQueryRequest('/changelog')
 
             if (objectClass.equals(ObjectClass.ACCOUNT)) {
                 request.queryFilter = QueryFilter.and(QueryFilter.greaterThan('_id', token), QueryFilter.contains('targetDN', 'ou=people,dc=example,dc=com'))
@@ -57,7 +57,7 @@ switch (operation) {
             request.addField('_id', 'changeType', 'targetDN')
             request.addSortKey(SortKey.ascendingOrder('_id'))
 
-            def lastToken = token.toString()
+            def lastToken = 0
             def exception = null;
 
             connection.query(new RootContext(), request, [
@@ -92,7 +92,7 @@ switch (operation) {
                             }
 
                             ReadRequest readRequest = Requests.newReadRequest(objectClassInfo.resourceContainer, resourceId)
-                            readRequest.setResourcePath("/api/" + readRequest.getResourcePath())
+
                             try {
                                 def changedResource = connection.read(new RootContext(), readRequest)
 
@@ -160,7 +160,7 @@ switch (operation) {
         break;
     case OperationType.GET_LATEST_SYNC_TOKEN:
 
-        QueryRequest request = Requests.newQueryRequest('/api/changelog')
+        QueryRequest request = Requests.newQueryRequest('/changelog')
         request.queryFilter = QueryFilter.alwaysTrue()
         request.addField('_id')
         request.addSortKey(SortKey.descendingOrder('_id'))

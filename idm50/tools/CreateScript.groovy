@@ -40,7 +40,7 @@ if (objectClassInfo != null) {
     def user = CRESTHelper.toJsonValue(id, attributeMap, objectClassInfo);
 
     CreateRequest request = Requests.newCreateRequest(objectClassInfo.resourceContainer, new JsonValue(user))
-    request.setResourcePath("/api/" + request.getResourcePath())
+
     request.addField("_id", "_rev")
     ResourceResponse resource = connection.create(new RootContext(), request)
     return new Uid(resource.getId(), resource.getRevision())

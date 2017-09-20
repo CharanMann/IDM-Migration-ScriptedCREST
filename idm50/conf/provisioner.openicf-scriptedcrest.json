@@ -35,10 +35,22 @@
         "enableAttributesToGetSearchResultsHandler" : true
     },
     "configurationProperties" : {
-        "serviceAddress" : "http://idm40.example.com:7070",
+        "serviceAddress" : "http://idm40.example.com:7070/openidm/managed",
         "proxyAddress" : null,
         "username" : "openidm-admin",
-        "password" : "openidm-admin",
+        "password" : {
+            "$crypto" : {
+                "type" : "x-simple-encryption",
+                "value" : {
+                    "iv" : "xLnPFWw8rip0mxHXcbvKSQ==",
+                    "data" : "P+k7mBgaLDIp3xreov8AXQ==",
+                    "mac" : "XO/mqNHWCMhuE5xCiIu6MA==",
+                    "cipher" : "AES/CBC/PKCS5Padding",
+                    "key" : "openidm-sym-default",
+                    "salt" : "CqiWZQsLUWEK4qyct69D6Q=="
+                }
+            }
+        },
         "defaultAuthMethod" : "BASIC_PREEMPTIVE",
         "defaultRequestHeaders" : [
             null
@@ -62,12 +74,11 @@
         "scriptBaseClass" : null,
         "recompileGroovySource" : false,
         "minimumRecompilationInterval" : 100,
-        "debug" : false,
+        "debug" : true,
         "verbose" : false,
         "warningLevel" : 1,
         "tolerance" : 10,
         "disabledGlobalASTTransformations" : null,
-        "targetDirectory" : null,
         "scriptRoots" : [
             "&{launcher.project.location}/tools"
         ]
@@ -179,5 +190,6 @@
                 }
             }
         }
-    }
+    },
+    "enabled" : true
 }

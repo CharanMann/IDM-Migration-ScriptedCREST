@@ -34,7 +34,6 @@ def objectClassInfo = configuration.propertyBag[objectClass.objectClassValue];
 if (objectClassInfo != null) {
 
     QueryRequest request = Requests.newQueryRequest(objectClassInfo.resourceContainer)
-    request.setResourcePath("/api/" + request.getResourcePath())
 
     def attributeDefinition = objectClassInfo.attributes[name]
     if (null != attributeDefinition) {
