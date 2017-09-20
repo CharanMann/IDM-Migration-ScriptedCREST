@@ -1,0 +1,25 @@
+{
+    "driverClass" : "com.mysql.jdbc.Driver",
+    "jdbcUrl" : "jdbc:mysql://&{openidm.repo.host}:&{openidm.repo.port}/openidm50?allowMultiQueries=true&characterEncoding=utf8",
+    "databaseName" : "openidm50",
+    "username" : "openidm",
+    "password" : {
+        "$crypto" : {
+            "type" : "x-simple-encryption",
+            "value" : {
+                "iv" : "Ci7bd8hCs5vfmdkgGApimA==",
+                "data" : "gYR7ikti67ORqAIC0BIifQ==",
+                "mac" : "l1Yb1tDJrdjlbH+xvu/IsA==",
+                "cipher" : "AES/CBC/PKCS5Padding",
+                "key" : "openidm-sym-default",
+                "salt" : "pqXXw6uThuWOZ0jVw+KIgw=="
+            }
+        }
+    },
+    "connectionTimeout" : 30000,
+    "connectionPool" : {
+        "type" : "hikari",
+        "minimumIdle" : 20,
+        "maximumPoolSize" : 50
+    }
+}
