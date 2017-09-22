@@ -47,12 +47,12 @@
                 },
                 {
                     "target" : "password",
-                    "source" : "password",
                     "transform" : {
-                        "type" : "text/javascript",
+                        "type" : "groovy",
                         "globals" : { },
-                        "source" : "logger.debug(source);"
+                        "file" : "PasswordConverter.groovy"
                     },
+                    "source" : "",
                     "condition" : {
                         "type" : "text/javascript",
                         "globals" : { },

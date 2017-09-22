@@ -7,12 +7,12 @@
         "$crypto" : {
             "type" : "x-simple-encryption",
             "value" : {
-                "iv" : "Ci7bd8hCs5vfmdkgGApimA==",
-                "data" : "gYR7ikti67ORqAIC0BIifQ==",
-                "mac" : "l1Yb1tDJrdjlbH+xvu/IsA==",
+                "iv" : "OPmFjgGfC1jtzcuIdwwh7w==",
+                "data" : "74kfKi2ARxSBjbEZ1kNCCA==",
+                "mac" : "67ER+uYAyfIcSy0yNDW4GA==",
                 "cipher" : "AES/CBC/PKCS5Padding",
                 "key" : "openidm-sym-default",
-                "salt" : "pqXXw6uThuWOZ0jVw+KIgw=="
+                "salt" : "mqDVnBs265BUF4J+koZP3g=="
             }
         }
     },

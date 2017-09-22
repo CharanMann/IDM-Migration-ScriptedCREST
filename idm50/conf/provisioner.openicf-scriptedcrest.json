@@ -42,12 +42,12 @@
             "$crypto" : {
                 "type" : "x-simple-encryption",
                 "value" : {
-                    "iv" : "xLnPFWw8rip0mxHXcbvKSQ==",
-                    "data" : "P+k7mBgaLDIp3xreov8AXQ==",
-                    "mac" : "XO/mqNHWCMhuE5xCiIu6MA==",
+                    "iv" : "gfhN02AcUGkrD/eObaqu8A==",
+                    "data" : "a34Xga3PEGWy3sdI3bQ1yw==",
+                    "mac" : "z78CIK+2wt8niIOW4Csj7g==",
                     "cipher" : "AES/CBC/PKCS5Padding",
                     "key" : "openidm-sym-default",
-                    "salt" : "CqiWZQsLUWEK4qyct69D6Q=="
+                    "salt" : "JKIrpvvgNsujUe4NS047uA=="
                 }
             }
         },
@@ -180,13 +180,13 @@
                     "nativeType" : "string"
                 },
                 "password" : {
-                    "type" : "string",
+                    "type" : "object",
+                    "items" : {
+                        "type" : "object",
+                        "nativeType" : "object"
+                    },
                     "nativeName" : "password",
-                    "nativeType" : "JAVA_TYPE_GUARDEDSTRING",
-                    "flags" : [
-                        "NOT_READABLE",
-                        "NOT_RETURNED_BY_DEFAULT"
-                    ]
+                    "nativeType" : "object"
                 }
             }
         }

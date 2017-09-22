@@ -26,6 +26,7 @@
 
     <properties>
         <openidm.version>5.0</openidm.version>
+        <commons.version>21.0.0</commons.version>
     </properties>
 
     <repositories>
@@ -43,33 +44,23 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.forgerock.openig</groupId>
-            <artifactId>openig-core</artifactId>
-            <version>${openig.version}</version>
+            <groupId>org.forgerock.commons</groupId>
+            <artifactId>forgerock-selfservice-stages</artifactId>
+            <version>${commons.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.forgerock.openig</groupId>
-            <artifactId>openig-uma</artifactId>
-            <version>${openig.version}</version>
+            <groupId>org.forgerock.commons</groupId>
+            <artifactId>forgerock-selfservice-core</artifactId>
+            <version>${commons.version}</version>
         </dependency>
-
-        <!-- OpenDJ API -->
-        <dependency>
-            <groupId>org.forgerock.opendj</groupId>
-            <artifactId>opendj-core</artifactId>
-            <version>${opendj.sdk.version}</version>
-        </dependency>
-        <!-- OpenDJ Grizzly -->
-        <dependency>
-            <groupId>org.forgerock.opendj</groupId>
-            <artifactId>opendj-grizzly</artifactId>
-            <version>${opendj.sdk.version}</version>
-        </dependency>
-
-        <!-- Commons -->
         <dependency>
             <groupId>org.forgerock.commons</groupId>
             <artifactId>json-resource-http</artifactId>
+            <version>${commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.forgerock.commons</groupId>
+            <artifactId>json-resource</artifactId>
             <version>${commons.version}</version>
         </dependency>
     </dependencies>

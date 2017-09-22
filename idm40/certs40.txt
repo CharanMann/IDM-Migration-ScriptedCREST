@@ -1,0 +1,45 @@
+
+Keystore type: JCEKS
+Keystore provider: SunJCE
+
+Your keystore contains 3 entries
+
+Alias name: openidm-sym-default
+Creation date: Sep 14, 2017
+Entry type: SecretKeyEntry
+
+
+*******************************************
+*******************************************
+
+
+Alias name: openidm-selfservice-key
+Creation date: Sep 14, 2017
+Entry type: SecretKeyEntry
+
+
+*******************************************
+*******************************************
+
+
+Alias name: openidm-localhost
+Creation date: Sep 14, 2017
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=localhost, O=OpenIDM Self-Signed Certificate, OU=None, L=None, ST=None, C=None
+Issuer: CN=localhost, O=OpenIDM Self-Signed Certificate, OU=None, L=None, ST=None, C=None
+Serial number: 15e81a3c4a7
+Valid from: Tue Aug 15 14:25:47 EDT 2017 until: Tue Sep 14 14:25:47 EDT 2027
+Certificate fingerprints:
+	 MD5:  DE:A8:41:BC:29:A7:60:D3:61:50:CF:8C:19:CE:15:57
+	 SHA1: 82:68:08:A3:7A:14:7B:9C:47:59:00:02:DA:10:34:64:09:EA:36:0D
+	 SHA256: 70:21:8A:AB:FB:5D:7D:BA:C0:AB:C6:AB:09:BD:BA:C9:D9:A4:35:8C:2E:AB:30:EC:34:7D:4F:C3:A3:2D:41:44
+	 Signature algorithm name: SHA512withRSA
+	 Version: 3
+
+
+*******************************************
+*******************************************
+
+
