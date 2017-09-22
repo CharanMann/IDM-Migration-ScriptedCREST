@@ -5,12 +5,13 @@ This module provides custom CREST connector for migration of IDM managed objects
 
 REST connector for IDM migration: <br />
 1. Managed users migration <br />
-2. Managed roles migration <br /> 
+2. Managed roles with assignments migration <br /> 
 3. 
 
 These features are not currently supported in this implementation: <br />
 1. LiveSync of managed objects from old to new IDM <br />
-2. 
+2. Relationships migration <br />
+3.
 
 
 Pre-requisites :
