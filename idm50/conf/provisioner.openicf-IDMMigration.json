@@ -1,5 +1,5 @@
 {
-    "name" : "IDMUserMigration",
+    "name" : "IDMMigration",
     "connectorRef" : {
         "connectorHostRef" : "#LOCAL",
         "connectorName" : "org.forgerock.openicf.connectors.scriptedcrest.ScriptedCRESTConnector",
@@ -65,7 +65,7 @@
         "createScriptFileName" : "CreateScript.groovy",
         "deleteScriptFileName" : "DeleteScript.groovy",
         "resolveUsernameScriptFileName" : "ResolveUsernameScript.groovy",
-        "schemaScriptFileName" : "SchemaUserScript.groovy",
+        "schemaScriptFileName" : "SchemaScript.groovy",
         "scriptOnResourceScriptFileName" : "ScriptOnResourceScript.groovy",
         "searchScriptFileName" : "SearchScript.groovy",
         "syncScriptFileName" : "SyncScript.groovy",

@@ -16,7 +16,7 @@ def configuration = configuration as ScriptedCRESTConfiguration
 def connection = connection as Connection
 def log = log as Log
 
-def file = new File(System.getProperty("launcher.project.location") + "/conf/provisioner.openicf-IDMUserMigration.json")
+def file = new File(System.getProperty("launcher.project.location") + "/conf/provisioner.openicf-IDMMigration.json")
 
 def schema = SchemaSlurper.parse(file.toURI().toURL())
 

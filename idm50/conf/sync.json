@@ -2,8 +2,8 @@
     "mappings" : [
         {
             "target" : "managed/user",
-            "source" : "system/IDMUserMigration/user",
-            "name" : "IDMUserMigrationUser_managedUser",
+            "source" : "system/IDMMigration/user",
+            "name" : "IDMMigrationUser_managedUser",
             "properties" : [
                 {
                     "target" : "mail",
