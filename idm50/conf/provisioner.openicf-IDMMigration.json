@@ -189,6 +189,60 @@
                     "nativeType" : "object"
                 }
             }
+        },
+        "assignment" : {
+            "$schema" : "http://json-schema.org/draft-03/schema",
+            "id" : "assignment",
+            "type" : "object",
+            "nativeType" : "assignment",
+            "properties" : {
+                "_id" : {
+                    "type" : "string",
+                    "required" : true,
+                    "nativeName" : "__NAME__",
+                    "nativeType" : "string",
+                    "flags" : [
+                        "NOT_UPDATEABLE"
+                    ]
+                },
+                "name" : {
+                    "type" : "string",
+                    "nativeName" : "name",
+                    "nativeType" : "string"
+                },
+                "description" : {
+                    "type" : "string",
+                    "nativeName" : "description",
+                    "nativeType" : "string"
+                },
+                "mapping" : {
+                    "type" : "string",
+                    "nativeName" : "mapping",
+                    "nativeType" : "string"
+                },
+                "attributes" : {
+                    "type" : "array",
+                    "nativeName" : "attributes",
+                    "nativeType" : "object",
+                    "items" : {
+                        "type" : "object",
+                        "properties" : {
+                            "name" : {
+                                "type" : "string"
+                            },
+                            "value" : {
+                                "type" : "string"
+                            },
+                            "assignmentOperation" : {
+                                "type" : "string"
+                            },
+                            "unassignmentOperation" : {
+                                "type" : "string"
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "enabled" : true
