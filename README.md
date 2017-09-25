@@ -30,7 +30,7 @@ IDM 5.0 Configuration:
 =====================
 1. Import openidm-sym-default key from IDM 4.0 to IDM 5.0 deployment. This will make sure that passwords encrypted by IDM 4.0 can be decrypted by IDM 5.0. 
 ```
-$ keytool -importkeystore -srckeystore keystore40.jceks -destkeystore keystore.jceks -srcstoretype JCEKS -deststoretype JCEKS -srcstorepass changeit -deststorepass changeit -srcalias openidm-sym-default -destalias openidm-sym-default -v
+<IDM5.0 Install>/security$ keytool -importkeystore -srckeystore keystore40.jceks -destkeystore keystore.jceks -srcstoretype JCEKS -deststoretype JCEKS -srcstorepass changeit -deststorepass changeit -srcalias openidm-sym-default -destalias openidm-sym-default -v
 Existing entry alias openidm-sym-default exists, overwrite? [no]:  yes
 [Storing keystore.jceks]
 ```

@@ -2,8 +2,8 @@
     "mappings" : [
         {
             "target" : "managed/user",
-            "source" : "system/scriptedcrest/user",
-            "name" : "systemScriptedcrestUser_managedUser",
+            "source" : "system/IDMUserMigration/user",
+            "name" : "IDMUserMigrationUser_managedUser",
             "properties" : [
                 {
                     "target" : "mail",
