@@ -29,6 +29,7 @@
                     "sn",
                     "mail",
                     "accountStatus",
+                    "employeeType",
                     "telephoneNumber",
                     "postalAddress",
                     "address2",
@@ -175,6 +176,14 @@
                         "title" : "Postal Code",
                         "viewable" : true,
                         "userEditable" : true
+                    },
+                    "employeeType" : {
+                        "title" : "Employee Type",
+                        "viewable" : true,
+                        "type" : "string",
+                        "searchable" : true,
+                        "userEditable" : false,
+                        "returnByDefault" : true
                     },
                     "accountStatus" : {
                         "title" : "Status",

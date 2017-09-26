@@ -18,10 +18,6 @@
                     "target" : "employeeNumber"
                 },
                 {
-                    "source" : "employeeType",
-                    "target" : "userType"
-                },
-                {
                     "source" : "givenName",
                     "target" : "givenName"
                 },
@@ -92,6 +88,10 @@
                         "type" : "text/javascript",
                         "file" : "script/transformHRAccounts.js"
                     }
+                },
+                {
+                    "target" : "employeeType",
+                    "source" : "employeeType"
                 }
             ],
             "policies" : [
@@ -172,6 +172,10 @@
                         "source" : "openidm.decrypt(source);"
                     },
                     "source" : "password"
+                },
+                {
+                    "target" : "employeeType",
+                    "source" : "employeeType"
                 }
             ],
             "policies" : [
@@ -240,7 +244,66 @@
                     "type" : "text/javascript",
                     "file" : "ui/correlateTreeToQueryFilter.js"
                 }
-            ]
+            ],
+            "recon" : {
+                "_id" : "75bfc4c6-1ff8-4fcf-8de1-c6f7a5d90e9f-359",
+                "mapping" : "managedUser_sourceHrAccount",
+                "state" : "SUCCESS",
+                "stage" : "COMPLETED_SUCCESS",
+                "stageDescription" : "reconciliation completed.",
+                "progress" : {
+                    "source" : {
+                        "existing" : {
+                            "processed" : 22,
+                            "total" : "22"
+                        }
+                    },
+                    "target" : {
+                        "existing" : {
+                            "processed" : 22,
+                            "total" : "22"
+                        },
+                        "created" : 0
+                    },
+                    "links" : {
+                        "existing" : {
+                            "processed" : 22,
+                            "total" : "22"
+                        },
+                        "created" : 0
+                    }
+                },
+                "situationSummary" : {
+                    "SOURCE_IGNORED" : 0,
+                    "MISSING" : 0,
+                    "FOUND" : 0,
+                    "AMBIGUOUS" : 0,
+                    "UNQUALIFIED" : 0,
+                    "CONFIRMED" : 22,
+                    "SOURCE_MISSING" : 0,
+                    "ABSENT" : 0,
+                    "TARGET_IGNORED" : 0,
+                    "UNASSIGNED" : 0,
+                    "FOUND_ALREADY_LINKED" : 0
+                },
+                "statusSummary" : {
+                    "FAILURE" : 0,
+                    "SUCCESS" : 22
+                },
+                "parameters" : {
+                    "sourceQuery" : {
+                        "resourceName" : "managed/user",
+                        "queryId" : "query-all-ids"
+                    },
+                    "targetQuery" : {
+                        "resourceName" : "system/HR/account",
+                        "queryId" : "query-all-ids"
+                    }
+                },
+                "started" : "2017-09-20T14:05:13.305Z",
+                "ended" : "2017-09-20T14:05:13.688Z",
+                "duration" : 383
+            }
         }
     ]
 }

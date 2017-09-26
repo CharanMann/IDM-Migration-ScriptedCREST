@@ -243,6 +243,54 @@
                     }
                 }
             }
+        },
+        "role" : {
+            "$schema" : "http://json-schema.org/draft-03/schema",
+            "id" : "assignment",
+            "type" : "string",
+            "nativeType" : "role",
+            "properties" : {
+                "_id" : {
+                    "type" : "string",
+                    "nativeType" : "string",
+                    "nativeName" : "__NAME__",
+                    "required" : true,
+                    "flags" : [
+                        "NOT_UPDATEABLE"
+                    ]
+                },
+                "name" : {
+                    "type" : "string",
+                    "nativeType" : "string",
+                    "nativeName" : "name",
+                    "required" : false
+                },
+                "description" : {
+                    "type" : "string",
+                    "nativeType" : "string",
+                    "nativeName" : "description",
+                    "required" : false
+                },
+                "assignments" : {
+                    "type" : "array",
+                    "nativeType" : "object",
+                    "nativeName" : "assignments",
+                    "required" : false,
+                    "items" : {
+                        "type" : "object",
+                        "properties" : {
+                            "_ref" : {
+                                "type" : "string"
+                            },
+                            "_refProperties" : {
+                                "type" : {
+                                    "_id" : "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "enabled" : true

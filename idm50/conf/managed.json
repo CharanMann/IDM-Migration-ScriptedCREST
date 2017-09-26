@@ -673,7 +673,7 @@
                         "description" : "",
                         "title" : "Managed Assignments",
                         "viewable" : true,
-                        "returnByDefault" : false,
+                        "returnByDefault" : true,
                         "type" : "array",
                         "items" : {
                             "type" : "relationship",
